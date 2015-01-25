@@ -1,0 +1,17 @@
+G:\SkyDrive\Documents\project\MusicforumsSpamer\MusicforumsSpamer\bin\Debug\MusicforumsSpamer.exe
+G:\SkyDrive\Documents\project\MusicforumsSpamer\MusicforumsSpamer\bin\Debug\MusicforumsSpamer.pdb
+G:\SkyDrive\Documents\project\MusicforumsSpamer\MusicforumsSpamer\bin\Debug\HtmlAgilityPack.dll
+G:\SkyDrive\Documents\project\MusicforumsSpamer\MusicforumsSpamer\bin\Debug\HtmlAgilityPack.pdb
+G:\SkyDrive\Documents\project\MusicforumsSpamer\MusicforumsSpamer\bin\Debug\HtmlAgilityPack.xml
+G:\SkyDrive\Documents\project\MusicforumsSpamer\MusicforumsSpamer\obj\Debug\MusicforumsSpamer.exe
+G:\SkyDrive\Documents\project\MusicforumsSpamer\MusicforumsSpamer\obj\Debug\MusicforumsSpamer.pdb
+C:\PlayAndBay\musicSpamer\MusicforumsSpamer\MusicforumsSpamer\obj\Debug\MusicforumsSpamer.exe
+C:\PlayAndBay\musicSpamer\MusicforumsSpamer\MusicforumsSpamer\obj\Debug\MusicforumsSpamer.pdb
+C:\PlayAndBay\musicSpamer\MusicforumsSpamer\MusicforumsSpamer\bin\Debug\MusicforumsSpamer.exe
+C:\PlayAndBay\musicSpamer\MusicforumsSpamer\MusicforumsSpamer\bin\Debug\MusicforumsSpamer.pdb
+C:\PlayAndBay\musicSpamer\MusicforumsSpamer\MusicforumsSpamer\obj\Debug\MusicforumsSpamer.csprojResolveAssemblyReference.cache
+C:\playandbay_new\musicSpamer\MusicforumsSpamer\MusicforumsSpamer\obj\Debug\MusicforumsSpamer.exe
+C:\playandbay_new\musicSpamer\MusicforumsSpamer\MusicforumsSpamer\obj\Debug\MusicforumsSpamer.pdb
+C:\playandbay_new\musicSpamer\MusicforumsSpamer\MusicforumsSpamer\bin\Debug\MusicforumsSpamer.exe
+C:\playandbay_new\musicSpamer\MusicforumsSpamer\MusicforumsSpamer\bin\Debug\MusicforumsSpamer.pdb
+C:\playandbay_new\musicSpamer\MusicforumsSpamer\MusicforumsSpamer\obj\Debug\MusicforumsSpamer.csprojResolveAssemblyReference.cache
