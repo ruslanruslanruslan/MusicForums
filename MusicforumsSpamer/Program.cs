@@ -8,6 +8,8 @@
         if (args[0].Equals("clear"))
           MFBot.LoadSectionsLinks();
       var user = UserInfoReader2.Info;
+      if (user == null)
+        return;
       var m = new Main()
       {
         Login = user.Login,

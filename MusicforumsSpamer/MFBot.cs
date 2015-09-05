@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Text;
+using System;
 
 namespace MusicforumsSpamer
 {
@@ -10,6 +11,7 @@ namespace MusicforumsSpamer
   {
     public static void LoadSectionsLinks()
     {
+      Logger.LogMessage("Loading section links...");
       IList<string> links = new List<string>();
       string content;
       var host = "http://www.musicforums.ru";
@@ -21,12 +23,18 @@ namespace MusicforumsSpamer
       var doc = new HtmlDocument();
       doc.LoadHtml(content);
       var node = doc.DocumentNode.SelectSingleNode("//div[@class='pad-tb corn-c']");
+      if (node == null)
+        throw new Exception("node is null");
       var nodesUl = node.SelectNodes("ul");
+      if (nodesUl == null)
+        throw new Exception("nodesUl is null");
       if (nodesUl.Count > 3)
       {
         for (var i = 0; i < 3; i++)
         {
           var anodes = nodesUl[i].SelectNodes("li/a");
+          if (anodes == null)
+            continue;
           foreach (var item in anodes)
           {
             var href = item.GetAttributeValue("href", "");
@@ -42,8 +50,9 @@ namespace MusicforumsSpamer
           }
         }
       }
-
+      Logger.LogMessage(string.Format("Load {0} section links", links.Count));
       File.WriteAllLines("SectionLinks.txt", links);
+      Logger.LogSuccess("Loading section links... SUCCESS");
     }
 
     public static CookieContainer GetCookieAuth(string user, string password)
@@ -67,9 +76,10 @@ namespace MusicforumsSpamer
       req.ContentLength = ByteArr.Length;
       req.GetRequestStream().Write(ByteArr, 0, ByteArr.Length);
 
-      var res = req.GetResponse();
-
-      return cookie;
+      if ((req.GetResponse() as HttpWebResponse).StatusCode == HttpStatusCode.OK)
+        return cookie;
+      else
+        throw new Exception("Authentication failed");
     }
   }
 }

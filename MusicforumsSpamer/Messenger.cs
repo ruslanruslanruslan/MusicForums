@@ -38,12 +38,16 @@ namespace MusicforumsSpamer
     {
       foreach (var item in linksUsers)
       {
-        Send(item);
+        Logger.LogMessage("Sending " + item + "...");
+        if (Send(item))
+          Logger.LogSuccess("Sending " + item + "... SUCCESS");
+        else
+          Logger.LogFailed("Sending " + item + "... FAILED");
         Thread.Sleep(1000);
       }
     }
 
-    public void Send(string link)
+    public bool Send(string link)
     {
       var to = Regex.Match(link, "&to=(.+)").Groups[1].Value;
       var bn = Regex.Match(link, "\\?bn=(.+?)&").Groups[1].Value;
@@ -86,6 +90,7 @@ namespace MusicforumsSpamer
           sw.WriteLine(to);
         }
       }
+      return isGood;
     }
   }
 

@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Text;
 
 namespace MusicforumsSpamer
@@ -19,17 +20,34 @@ namespace MusicforumsSpamer
     {
       get
       {
-        if (userInfo == null)
-          userInfo = ReadUserInfo("info.txt");
+        try
+        {
+          Logger.LogMessage("Reading user info...");
+          if (userInfo == null)
+            userInfo = ReadUserInfo("info.txt");
+        }
+        catch(Exception ex)
+        {
+          Logger.LogFailed("Reading user info... FAILED: " + ex.Message);
+          return null;
+        }
+        Logger.LogSuccess("Reading user info... SUCCESS");
         return userInfo;
       }
     }
     public static UserInfo2 ReadUserInfo(string path)
     {
       string text;
-      using (var reader = new StreamReader(path, Encoding.UTF8))
+      try
       {
-        text = reader.ReadToEnd();
+        using (var reader = new StreamReader(path, Encoding.UTF8))
+        {
+          text = reader.ReadToEnd();
+        }
+      }
+      catch(Exception ex)
+      {
+        throw new Exception("Can't read file " + path, ex);
       }
       var user = new UserInfo2();
 

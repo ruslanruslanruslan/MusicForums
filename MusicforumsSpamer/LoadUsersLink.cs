@@ -67,14 +67,6 @@ namespace MusicforumsSpamer
       {
         content = st.ReadToEnd();
       }
-      /*
-                  using (WebClient wc = new WebClient())
-                  {
-                      wc.Headers["User-Agent"] = "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)";
-                      content = wc.DownloadString(link);
-
-                  }
-       */
       if (string.IsNullOrEmpty(content))
         throw new WebException("Content have not Downloaded");
 
