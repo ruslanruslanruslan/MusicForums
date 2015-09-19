@@ -74,11 +74,12 @@ namespace MusicforumsSpamer
       doc.LoadHtml(content);
     }
 
-    public void LoadLinkFromPage()
+    public int LoadLinkFromPage()
     {
+      var count = 0;
       var trNode = doc.DocumentNode.SelectNodes("//div[@class='tbl-striped mrg-header blue']/table/tr[@id]");
       if (trNode == null)
-        return;
+        return 0;
       foreach (var item in trNode)
       {
         if (!next)
@@ -104,6 +105,7 @@ namespace MusicforumsSpamer
                   using (var tw = new StreamWriter("Links.txt", true))
                   {
                     tw.WriteLine(linkOnUser);
+                    ++count;
                   }
                 }
                 else
@@ -117,6 +119,7 @@ namespace MusicforumsSpamer
           }
         }
       }
+      return count;
     }
 
     public void ParserPagesLinks()

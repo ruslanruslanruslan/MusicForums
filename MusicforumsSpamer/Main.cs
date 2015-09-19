@@ -100,7 +100,7 @@ namespace MusicforumsSpamer
           loaderLink.Link = item;
           loaderLink.LoadContent(item);
 
-          loaderLink.LoadLinkFromPage();
+          Logger.LogMessage("Parsed " + loaderLink.LoadLinkFromPage() + " new items");
           loaderLink.ParserPagesLinks();
           loaderLink.LoadLinkFromAllPage();
         }
