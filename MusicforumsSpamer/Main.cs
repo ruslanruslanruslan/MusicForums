@@ -57,7 +57,7 @@ namespace MusicforumsSpamer
       CookieContainer cookie = null;
       try
       {
-        Logger.LogMessage("Authentication...");
+          Logger.LogMessage("Authentication..." + Login + " " + Password);
         cookie = MFBot.GetCookieAuth(Login, Password);
       }
       catch (Exception ex)
