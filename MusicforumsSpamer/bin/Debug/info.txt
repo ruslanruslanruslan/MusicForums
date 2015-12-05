@@ -1,4 +1,4 @@
-﻿login="Che02"
-password="PBQqXq"
+﻿login="Che03"
+password="arWayX"
 title="Предложение"
 body="Добрй день! Попробуйте разместить свое объявление тут: http://playandbay.com/"

@@ -5,3 +5,10 @@ http://www.musicforums.ru/acoustic_buysell/messages.php?bn=mfor_acousticbuysell&
 http://www.musicforums.ru/musicant/messages.php?bn=mfor_musicant&act=send&to=ВБ
 http://www.musicforums.ru/musicant/messages.php?bn=mfor_musicant&act=send&to=ВБ
 http://www.musicforums.ru/musicant/messages.php?bn=mfor_musicant&act=send&to=ВБ
+http://www.musicforums.ru/musicant/messages.php?bn=mfor_musicant&act=send&to=ВБ
+http://www.musicforums.ru/musicant/messages.php?bn=mfor_musicant&act=send&to=guitarset
+http://www.musicforums.ru/musicant/messages.php?bn=mfor_musicant&act=send&to=HFM
+http://www.musicforums.ru/newband/messages.php?bn=mfor_newband&act=send&to=Krakozyabr
+http://www.musicforums.ru/dimarzio/messages.php?bn=mfor_dimarzio&act=send&to=PICKUPS.RU
+http://www.musicforums.ru/musicant/messages.php?bn=mfor_musicant&act=send&to=ВБ
+http://www.musicforums.ru/dimarzio/messages.php?bn=mfor_dimarzio&act=send&to=PICKUPS.RU
