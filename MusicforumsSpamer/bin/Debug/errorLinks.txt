@@ -12,3 +12,7 @@ http://www.musicforums.ru/newband/messages.php?bn=mfor_newband&act=send&to=Krako
 http://www.musicforums.ru/dimarzio/messages.php?bn=mfor_dimarzio&act=send&to=PICKUPS.RU
 http://www.musicforums.ru/musicant/messages.php?bn=mfor_musicant&act=send&to=ВБ
 http://www.musicforums.ru/dimarzio/messages.php?bn=mfor_dimarzio&act=send&to=PICKUPS.RU
+http://www.musicforums.ru/musicant/messages.php?bn=mfor_musicant&act=send&to=ВБ
+http://www.musicforums.ru/dimarzio/messages.php?bn=mfor_dimarzio&act=send&to=PICKUPS.RU
+http://www.musicforums.ru/musicant/messages.php?bn=mfor_musicant&act=send&to=ВБ
+http://www.musicforums.ru/dimarzio/messages.php?bn=mfor_dimarzio&act=send&to=PICKUPS.RU
